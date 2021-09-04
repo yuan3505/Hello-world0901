@@ -1,74 +1,133 @@
-/*
-    Color scheme for this website:
-lavender: #e2e9f6
-Bright Red: #DE354C
-Deep Red: #932432
-Pure Purple: #3C1874
-Purple Tinged Grey: #283747
-LIGHT GREEN: #B4F8C8
-Cloud: #F3F3F3*/
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
 
 body {
-	margin: 5px;
-	padding: 10px;
-	background: #B4F8C8;
-	color: #932432;
-	font-family: American Typewriter, serif;
-	font-size: 20px;
-	font-style: normal;
-	text-align: left;
-	
-	}
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-  display: block, inline;
-  
-  width: 20%;
+  width: 70%;
+  margin: 0 auto;
 }
 
+/* || typography */
 
-/* h1 + p {
-  font-size: 300%;
-	padding: 0px;
-	border: 5px;
-} */
-p {
-	margin: 5px;
-	margin-right: 650px;
-	padding: 0px;
-		
-}
-li em {
-  color: #3C1874;
-}
-a:link {
-    color: chocolate;
+h1, h2, h3 {
+  font-family: 'Sonsie One', cursive;
+  color: #2a2a2a;
 }
 
-a:visited {
-    color: rgb(70,13,207);
-}
-
-a:hover {
-    text-decoration: rgb(0,13,207);
+p, input, li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2a2a2a;
 }
 
 h1 {
-	display: inline;
-	font-family: Apple Chancery, cursive;
-	font-size: 50px;
-	font-style: oblique;
-	font-weight: 900;
-	color: #3C1874;
-	line-height: 300%;
-	text-align: center;
-	padding: 15px;
-	}
-h2 {
-margin: 5px;
-	margin-right: 650px;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
 
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+nav, article, aside, footer {
+  background-color: white;
+  padding: 1%;
+}
+
+nav {
+  height: 50px;
+  background-color: #ff80ff;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
 }
